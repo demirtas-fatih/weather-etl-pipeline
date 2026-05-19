@@ -4,9 +4,19 @@ An end-to-end ETL pipeline that **extracts** live weather data from the Open-Met
 
 ---
 
-## 🚀 Live Demo
+## 📸 Dashboard Preview
 
-> Run locally with `streamlit run dashboard.py` after executing the pipeline.
+![Weather Dashboard](screenshots/weather_dashboard.png)
+*Live KPI cards showing 20 cities tracked, avg temperature, hottest/coldest city*
+
+![Temperature Chart](screenshots/weather_temp_chart.png)
+*Current temperature by city — color coded (warm vs cold)*
+
+![Scatter Plot](screenshots/weather_scatter.png)
+*Humidity vs Temperature scatter plot with wind speed as color*
+
+![7-Day Trend](screenshots/weather_trend.png)
+*7-day temperature trend for selected cities*
 
 ---
 
@@ -46,6 +56,7 @@ weather-etl-pipeline/
 ├── output/
 │   └── weather.db          # SQLite database (auto-generated)
 │
+├── screenshots/            # Dashboard previews
 ├── pipeline.py             # Run ETL once or on schedule
 ├── dashboard.py            # Streamlit dashboard
 ├── requirements.txt
@@ -77,11 +88,10 @@ python pipeline.py --schedule
 ## 📊 Dashboard Features
 
 - **KPI cards** — cities tracked, avg/min/max temperature
-- **Temperature bar chart** — all cities ranked, color-coded
-- **Humidity vs Temperature scatter** — wind speed as color
+- **Temperature bar chart** — all cities ranked, color-coded (warm = red, cold = blue)
+- **Humidity vs Temperature scatter** — wind speed as color gradient
 - **7-day trend lines** — select any cities to compare
 - **Raw data table** — filterable by country
-- **Country filter** — focus on specific regions
 
 ---
 
@@ -104,20 +114,16 @@ python pipeline.py --schedule
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
 
-```
-requests · pandas · SQLite · Streamlit · schedule · matplotlib
-```
-
 ---
 
 ## 🌍 Cities Tracked
 
-20 cities across Europe, USA and Asia including Berlin, Munich, Bamberg, London, Paris, Amsterdam, Vienna, Istanbul, New York, Tokyo and more.
+20 cities across Europe, USA and Asia — Berlin, Munich, **Bamberg**, London, Paris, Amsterdam, Vienna, Istanbul, New York, Tokyo and more.
 
 ---
 
 ## 👤 Author
 
-**Fatih Demirtas** — Data Analyst & BI Specialist  
-📍 Bamberg, Germany  
-🔗 [LinkedIn](https://www.linkedin.com/in/fatih-demirtas47/) · [Portfolio](https://demirtas-fatih.github.io/)
+**Fatih Demirtas** — Data Analyst & BI Specialist
+📍 Bamberg, Germany
+🔗 [LinkedIn](https://www.linkedin.com/in/fatih-demirtas47/) · [Portfolio](https://demirtas-fatih.github.io/demirtas-fatih/)
