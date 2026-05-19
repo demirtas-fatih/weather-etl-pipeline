@@ -6,13 +6,13 @@ An end-to-end ETL pipeline that **extracts** live weather data from the Open-Met
 
 ## 📸 Dashboard Preview
 
-![Weather Dashboard](screenshots/weather_dashboard.png)
+![Weather Dashboard](screenshot/weather_dashboard.png)
 *Live KPI cards + current temperature by city — color coded (warm vs cold)*
 
-![Scatter Plot](screenshots/weather_scatter.png)
+![Scatter Plot](screenshot/weather_scatter.png)
 *Humidity vs Temperature scatter plot with wind speed as color gradient*
 
-![7-Day Trend](screenshots/weather_trend.png)
+![7-Day Trend](screenshot/weather_trend.png)
 *7-day temperature trend for selected cities*
 
 ---
